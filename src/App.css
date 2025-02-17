@@ -62,9 +62,40 @@
 
 
 .main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f7f7f7;
+  padding: 30px;
 }
 
+.search-bar{
+ width: 100%;
+ height: 50px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.search-bar > Input{
+  width: 30%;
+  height: 50px;
+  
+}
+
+
+.pagination-container{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
 .product > img{
   padding: 40px;
 }
@@ -269,4 +300,28 @@
 .login-container > Form > Button{
   width: 100px !important;
   color: green;
+}
+
+
+.filters{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.search-bar > Input{
+  margin-left: 80px;
+  border: 1px solid grey;
+  color: black !important;
+  border-radius: 25px;
+
+}
+
+
+.buttons > Button{
+  border: 2px solid rgb(179, 178, 178);
 }

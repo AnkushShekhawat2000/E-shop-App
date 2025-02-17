@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import Header from "../Header/Header"
 import Main from "../Main/Main"
 import "antd/dist/reset.css";
+import CoralSlider from "../Header/Coral";
 
 
 function Dashboard() {
@@ -34,6 +35,7 @@ async function fetchProducts() {
     <div className="App">
      
       <Header products={products}/>
+      <CoralSlider/>
       <Main  data ={{products, setProducts}}/>
     
     </div>

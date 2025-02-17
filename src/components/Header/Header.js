@@ -5,6 +5,7 @@ import { authActions } from "../../redux/auth/actions";
 import Sidebar from "../Header/Sidebar";
 import cart from "../../assets/cart.png"
 import logo from "../../assets/shop image.jpeg"
+import CoralSlider from "./Coral";
 
 const { Search } = Input;
 
@@ -20,7 +21,7 @@ const Header = ({products}) => {
 
     let totalPrice = useSelector(s => s.cart.totalPrice);
     if (totalPrice > 0) {
-        totalPrice = Math.round(totalPrice);  // Use Math.round() to remove decimals
+        totalPrice = Math.round(totalPrice); 
     }
 
 
