@@ -13,19 +13,22 @@
 
 .header-container{
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
   background-color: rgb(19,25,33);
+  position: sticky;
+  top:0px;
+  z-index: 1000;
 }
 
 .logo{
-  width: 100px;
-  height: 100px;
-  padding: 15px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
 }
 
 .header-button{
@@ -35,20 +38,29 @@
   gap: 40px;
 }
 
+
 .cart-button{
-  width: 100px;
-  height: 50px;
+  width: 160px;
+  height: 70px;
   background-color: green;
   color: white;
   border-radius: 10px;
   margin-right: 20px;
-  justify-content: flex-start;
+  padding-left: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price{
+  font-size: 25px!important;;
+  color: black!important;
+  font-weight: 750!important;
 }
 
 .cart-image{
-  width: 50px;
-  height: 50px;
-  color: white;
+  width: 70px;
+  height: 170px;
+  color: white!;
 }
 
 .buttons{
@@ -82,6 +94,7 @@
 .search-bar > Input{
   width: 30%;
   height: 50px;
+  margin-left: 300px;
   
 }
 
@@ -119,10 +132,9 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 600;
-  max-height: 14px;
-  max-width: 16px;
+ padding: 2px;
 }
 
 
@@ -138,7 +150,7 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
-  width: 800px;
+  width: 1000px;
   height: 100px;
   gap: 90px;
   padding:100px 200px;
@@ -233,15 +245,25 @@
 }
 
 .cart-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: -12px;
-  right: 35px;
-  background-color: red;
+  top: -10px;
+  right: 75px;
+  width: 30px;
+  height: 30px;
+  background-color:red;
   color: white;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 28px;
   padding: 4px 8px;
   border-radius: 50%;
+}
+
+.cart-badge {
+   font-size: 18px;
+   font-weight: bold;
+   padding: 10px;
 }
 
 
@@ -253,8 +275,6 @@
 
 .cart-badge,.price,.cart-text > span{
    color: black;
-   font-size: 11px;
-   font-weight: bold;
 }
 
 
@@ -314,12 +334,22 @@
 }
 
 .search-bar > Input{
-  margin-left: 80px;
+  margin-left: 220px;
   border: 1px solid grey;
   color: black !important;
   border-radius: 25px;
 
 }
+
+
+Input::placeholder {
+  color:black !important;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; 
+  font-style: italic; 
+  padding: 5px;
+}
+
 
 
 .buttons > Button{

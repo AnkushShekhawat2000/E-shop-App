@@ -35,17 +35,16 @@ const Header = ({products}) => {
                 <Button className="cart-button" onClick={() => setOpen(true)}>
                     {totalPrice !== 0 ? (
                         <div className="cart-container">
-                            <img className="cart-image" src={cart} alt="cart" />
+                            <img className="cart-image" style={{width:"70px",height:"70px",}} src={cart} alt="cart" />
                             {totalProducts > 0 && <span className="cart-badge">{totalProducts}</span>}
                             <span className="price">$ {totalPrice}</span>
                         </div>
                     ) : (
                         <span className="cart-text"> <img className="cart-image" src={cart} alt="cart" /><span>MyCart</span></span>
                     )}
-              </Button>
-              <Sidebar data={{ open, setOpen, products }} />
-
-
+                </Button>
+                
+                <Sidebar data={{ open, setOpen, products }} />
               </div>
         </div>
     )

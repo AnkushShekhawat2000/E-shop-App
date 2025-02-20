@@ -29,16 +29,16 @@ const Product = ({data}) => {
 
   return (
   <div className="product">
-    <h4>{data.title}</h4>
+    <h1>{data.title}</h1>
     <img src={data.image} alt={data.title} />
-    <p className="product-description">
+    <h3 className="product-description">
        {isExpanded ? data.description : `${data.description.slice(0,maxLength)}...`}
        <Button className="expand-button" onClick={() => setIsExpanded(!isExpanded)}>
-        {isExpanded ? "less..." : "more..."}
+         <h2>{isExpanded ? "less..." : "more..."}</h2>
        </Button>
-    </p> 
+    </h3> 
   
-    <h4>Price: ${data.price}</h4>
+    <h1>Price: ${data.price}</h1>
 
      <div className="button-container">
      <Button className="add-button" onClick={() => dispatch({ type: cartActions.INC_QTY, payload: { id: data.id, price: data.price } })}>Add to Cart</Button>

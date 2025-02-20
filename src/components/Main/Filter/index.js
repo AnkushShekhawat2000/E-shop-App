@@ -57,7 +57,7 @@ const CustomFilter = ({data}) => {
                     defaultValue={[0, 1000]}
                     onChange={setPriceRange} 
                 />
-               <p>${priceRange[0]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${priceRange[1]}</p>
+               <p>${priceRange[0]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${priceRange[1]}</p>
 
             </div>
 

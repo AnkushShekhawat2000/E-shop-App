@@ -34,11 +34,7 @@ const Main = ({ data }) => {
 
     return (
         <div className="main-container">
-             
-     
-           
-
-
+        
            <span className="filters"> 
               <div className="search-bar">
                 <Input
