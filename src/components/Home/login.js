@@ -72,7 +72,14 @@ const Login = () => {
     return (
         <div className="login-container">
             {error && <Alert message={error} type="error" showIcon />}
-         <Form onFinish={onFinishForm}  autoComplete='off'>
+          <Form 
+            onFinish={onFinishForm}  
+            autoComplete="off"
+            initialValues={{
+                username: "johnd",
+                password: "m38rmF$"
+            }}
+           >
 
            <Form.Item
             
